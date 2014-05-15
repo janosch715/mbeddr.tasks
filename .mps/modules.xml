@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MPSProject">
+    <projectModules>
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.ext.tasks/com.mbeddr.ext.tasks.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.ext.time/com.mbeddr.ext.time.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/mbeddr.adds.buildconfig/mbeddr.adds.buildconfig.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.ext.tasks.rt/com.mbeddr.ext.tasks.rt.msd" folder="" />
+    </projectModules>
+  </component>
+</project>
+

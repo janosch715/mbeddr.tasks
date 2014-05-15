@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<history>
+  <StructureModification>
+    <dependencies>
+      <model index="y2pp" modelUID="r:07a69fd3-1130-445a-b42b-65961188fc22(com.mbeddr.ext.tasks.structure)" version="-1" />
+    </dependencies>
+    <rename id="y2pp.759338601081802884" type="CHILD" from="taskConfiguration" to="taskConfigurations" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="y2pp" modelUID="r:07a69fd3-1130-445a-b42b-65961188fc22(com.mbeddr.ext.tasks.structure)" version="0" />
+    </dependencies>
+    <rename id="y2pp.4789313336941285776" type="CONCEPT" from="RunToCompletion" to="RunToCompletionTaskDefinition" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="y2pp" modelUID="r:07a69fd3-1130-445a-b42b-65961188fc22(com.mbeddr.ext.tasks.structure)" version="1" />
+    </dependencies>
+    <rename id="y2pp.3217357627680832321" type="CONCEPT" from="StartAllTasksInitArguments" to="StartTaskArgument" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="y2pp" modelUID="r:07a69fd3-1130-445a-b42b-65961188fc22(com.mbeddr.ext.tasks.structure)" version="2" />
+    </dependencies>
+    <rename id="y2pp.3735709350941459660" type="CONCEPT" from="ITaskPlatform" to="ITasksPlatform" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="y2pp" modelUID="r:07a69fd3-1130-445a-b42b-65961188fc22(com.mbeddr.ext.tasks.structure)" version="3" />
+    </dependencies>
+    <rename id="y2pp.3735709350941455983" type="CONCEPT" from="TasksConfiguration" to="TasksBuildConfiguration" />
+  </StructureModification>
+</history>
+

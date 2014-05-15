@@ -1,0 +1,29 @@
+# -----------------------------------------------------------
+# General
+
+distros/*
+MPS/*
+mps-distrib/*
+
+.DS_Store
+.metadata
+.svn
+*.synctex.gz
+*.aux
+*.log
+*.*.synctex.gz
+*.*.aux
+*.*.log
+
+.idea
+workspace.xml
+
+junitvmwatcher*.properties
+build.properties
+TEST-*.xml
+junit*.properties
+
+classes_gen
+source_gen
+source_gen.caches
+

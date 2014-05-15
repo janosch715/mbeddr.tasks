@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<history>
+  <StructureModification>
+    <dependencies>
+      <model index="k4xd" modelUID="r:7ac02ff0-212e-42f2-bec1-dd699fcab09a(com.mbeddr.ext.time.structure)" version="-1" />
+    </dependencies>
+    <rename id="k4xd.5316831639744643851" type="CONCEPT" from="GetCurrentTimeTicks" to="GetCurrentTicks" />
+  </StructureModification>
+</history>
+
