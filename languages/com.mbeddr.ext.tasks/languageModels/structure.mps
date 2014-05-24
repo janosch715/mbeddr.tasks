@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:07a69fd3-1130-445a-b42b-65961188fc22(com.mbeddr.ext.tasks.structure)" version="4">
+<model modelUID="r:07a69fd3-1130-445a-b42b-65961188fc22(com.mbeddr.ext.tasks.structure)" version="7">
   <persistence version="8" />
   <language namespace="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
@@ -9,7 +9,7 @@
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="25" />
   <import index="gjff" modelUID="r:d67806e2-357e-4785-b706-1dba5aa9c486(com.mbeddr.ext.tasks.rt.profiling)" version="-1" />
   <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="11" />
-  <import index="y2pp" modelUID="r:07a69fd3-1130-445a-b42b-65961188fc22(com.mbeddr.ext.tasks.structure)" version="4" implicit="yes" />
+  <import index="y2pp" modelUID="r:07a69fd3-1130-445a-b42b-65961188fc22(com.mbeddr.ext.tasks.structure)" version="7" implicit="yes" />
   <import index="tpce" modelUID="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" version="0" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="9022744129987875051" nodeInfo="ig">
@@ -100,6 +100,9 @@
       <node role="attributed" roleId="tpce.7588428831947959310" type="tpce.AttributeInfo_AttributedConcept" typeId="tpce.6054523464627964745" id="9022744129984705482" nodeInfo="ng">
         <link role="concept" roleId="tpce.6054523464627965081" targetNodeId="c4fa.8441331188640771826" resolveInfo="WhileStatement" />
       </node>
+      <node role="attributed" roleId="tpce.7588428831947959310" type="tpce.AttributeInfo_AttributedConcept" typeId="tpce.6054523464627964745" id="4418448293022119192" nodeInfo="ng">
+        <link role="concept" roleId="tpce.6054523464627965081" targetNodeId="c4fa.8441331188640899788" resolveInfo="DoWhileStatement" />
+      </node>
     </node>
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="9022744129987688541" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
@@ -180,7 +183,7 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="profiling" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="c4fa.4185783222026464515" resolveInfo="Statement" />
     <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="67259666007484403" nodeInfo="ig">
-      <property name="name" nameId="tpck.1169194664001" value="key" />
+      <property name="name" nameId="tpck.1169194664001" value="profilingPointId" />
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657062" resolveInfo="integer" />
     </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="1172152100057073018" nodeInfo="ig">
@@ -191,14 +194,12 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="profiling" />
     <property name="name" nameId="tpck.1169194664001" value="GeneratedProfilingExit" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="c4fa.4185783222026464515" resolveInfo="Statement" />
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="67259666007602720" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
-      <property name="role" nameId="tpce.1071599776563" value="profilingEnter" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="67259666007484402" resolveInfo="GeneratedProfilingEnter" />
-    </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="1172152100057073020" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="1172152100057071704" resolveInfo="IProfilingStatement" />
+    </node>
+    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="6312011405421528191" nodeInfo="ig">
+      <property name="name" nameId="tpck.1169194664001" value="profilingPointId" />
+      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657062" resolveInfo="integer" />
     </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1887758849508886751" nodeInfo="ig">
@@ -241,7 +242,7 @@
     <property name="name" nameId="tpck.1169194664001" value="ProfilingDisable" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="profilingDisable()" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="Disables the recording of the profiling." />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="mj1l.8860443239512128050" resolveInfo="Expression" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="c4fa.4185783222026464515" resolveInfo="Statement" />
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="1172152100058291610" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="1172152100057071704" resolveInfo="IProfilingStatement" />
     </node>
@@ -251,7 +252,7 @@
     <property name="name" nameId="tpck.1169194664001" value="ProfilingEnable" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="profilingEnable()" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="Enables the recording of the profiling if it was disabled before." />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="mj1l.8860443239512128050" resolveInfo="Expression" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="c4fa.4185783222026464515" resolveInfo="Statement" />
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="1172152100058291488" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="1172152100057071704" resolveInfo="IProfilingStatement" />
     </node>
@@ -261,7 +262,7 @@
     <property name="name" nameId="tpck.1169194664001" value="ProfilingInit" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="profilingInit()" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="Initializes the profiler. Must be called once per profiling session." />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="mj1l.8860443239512128050" resolveInfo="Expression" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="c4fa.4185783222026464515" resolveInfo="Statement" />
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="1172152100057863871" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="1172152100057071704" resolveInfo="IProfilingStatement" />
     </node>
@@ -271,7 +272,7 @@
     <property name="name" nameId="tpck.1169194664001" value="ProfilingOutput" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="Outputs the profiling informations. The format and output type depends on the configuration." />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="output profiling results" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="mj1l.8860443239512128050" resolveInfo="Expression" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="c4fa.4185783222026464515" resolveInfo="Statement" />
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="1172152100058291732" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="1172152100057071704" resolveInfo="IProfilingStatement" />
     </node>
@@ -353,6 +354,10 @@
     <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="3217357627680832878" nodeInfo="ig">
       <property name="name" nameId="tpck.1169194664001" value="inStartAllIncluded" />
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657063" resolveInfo="boolean" />
+    </node>
+    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="7223518357404685854" nodeInfo="ig">
+      <property name="name" nameId="tpck.1169194664001" value="generationTaskId" />
+      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657062" resolveInfo="integer" />
     </node>
   </root>
   <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="759338601081802725" nodeInfo="ig">
@@ -558,6 +563,63 @@
   <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="8364403220587616782" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="tasks" />
     <property name="name" nameId="tpck.1169194664001" value="ITaskExpression" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1183455539488637770" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="mbeddrTasks" />
+    <property name="name" nameId="tpck.1169194664001" value="MbeddrTaskDispatchTasksExpression" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="dispatch tasks" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="mj1l.8860443239512128050" resolveInfo="Expression" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="1183455539488637771" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="8364403220587616782" resolveInfo="ITaskExpression" />
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1183455539488669298" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="mbeddrTasks" />
+    <property name="name" nameId="tpck.1169194664001" value="MbeddrTasksSchedulerInitExpression" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="initialize scheduler" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="mj1l.8860443239512128050" resolveInfo="Expression" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="1183455539488669299" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="8364403220587616782" resolveInfo="ITaskExpression" />
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7223518357405719327" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="mbeddrTasks" />
+    <property name="name" nameId="tpck.1169194664001" value="MbeddrTaskPriorityConfiguration" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="priority" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7223518357405719328" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="759338601081802725" resolveInfo="ITaskConfigurationItem" />
+    </node>
+    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="7223518357405719330" nodeInfo="ig">
+      <property name="name" nameId="tpck.1169194664001" value="priority" />
+      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657062" resolveInfo="integer" />
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3170404780802827042" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="profiling" />
+    <property name="name" nameId="tpck.1169194664001" value="ProfilingPointEnter" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="profiling point enter" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="c4fa.4185783222026464515" resolveInfo="Statement" />
+    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="3170404780802827045" nodeInfo="ig">
+      <property name="name" nameId="tpck.1169194664001" value="profilingPointId" />
+      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983041843" resolveInfo="string" />
+    </node>
+    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="6312011405420354687" nodeInfo="ig">
+      <property name="name" nameId="tpck.1169194664001" value="generatedProfilingId" />
+      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657062" resolveInfo="integer" />
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6312011405420622580" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="profiling" />
+    <property name="name" nameId="tpck.1169194664001" value="ProfilingPointExit" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="profiling point exit" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="c4fa.4185783222026464515" resolveInfo="Statement" />
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="6312011405420626372" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
+      <property name="role" nameId="tpce.1071599776563" value="profilingEnter" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="3170404780802827042" resolveInfo="ProfilingPointEnter" />
+    </node>
   </root>
 </model>
 

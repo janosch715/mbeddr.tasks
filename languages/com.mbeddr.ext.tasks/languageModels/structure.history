@@ -30,5 +30,23 @@
     </dependencies>
     <rename id="y2pp.3735709350941455983" type="CONCEPT" from="TasksConfiguration" to="TasksBuildConfiguration" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="y2pp" modelUID="r:07a69fd3-1130-445a-b42b-65961188fc22(com.mbeddr.ext.tasks.structure)" version="4" />
+    </dependencies>
+    <rename id="y2pp.1183455539488637770" type="CONCEPT" from="DispatchTasksExpression" to="MbeddrTaskDispatchTasksExpression" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="y2pp" modelUID="r:07a69fd3-1130-445a-b42b-65961188fc22(com.mbeddr.ext.tasks.structure)" version="5" />
+    </dependencies>
+    <rename id="y2pp.3170404780802827042" type="CONCEPT" from="ProfilingPointStart" to="ProfilingPointEnter" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="y2pp" modelUID="r:07a69fd3-1130-445a-b42b-65961188fc22(com.mbeddr.ext.tasks.structure)" version="6" />
+    </dependencies>
+    <rename id="y2pp.67259666007484403" type="PROPERTY" from="key" to="profilingPointId" />
+  </StructureModification>
 </history>
 

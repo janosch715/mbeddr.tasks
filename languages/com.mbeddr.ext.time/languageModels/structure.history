@@ -6,5 +6,23 @@
     </dependencies>
     <rename id="k4xd.5316831639744643851" type="CONCEPT" from="GetCurrentTimeTicks" to="GetCurrentTicks" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="k4xd" modelUID="r:7ac02ff0-212e-42f2-bec1-dd699fcab09a(com.mbeddr.ext.time.structure)" version="0" />
+    </dependencies>
+    <rename id="k4xd.6312011405423452895" type="CONCEPT" from="AtmegaInterrupt" to="AtmegaInterruptConfiguration" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="k4xd" modelUID="r:7ac02ff0-212e-42f2-bec1-dd699fcab09a(com.mbeddr.ext.time.structure)" version="1" />
+    </dependencies>
+    <rename id="k4xd.6312011405423452895" type="CONCEPT" from="AtmegaInterruptConfiguration" to="AtmegaInterruptKind" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="k4xd" modelUID="r:7ac02ff0-212e-42f2-bec1-dd699fcab09a(com.mbeddr.ext.time.structure)" version="2" />
+    </dependencies>
+    <rename id="k4xd.6312011405423452895" type="CONCEPT" from="AtmegaInterruptKind" to="AtmegaIARInterruptKind" />
+  </StructureModification>
 </history>
 
