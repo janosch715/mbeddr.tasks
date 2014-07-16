@@ -48,5 +48,11 @@
     </dependencies>
     <rename id="y2pp.67259666007484403" type="PROPERTY" from="key" to="profilingPointId" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="y2pp" modelUID="r:07a69fd3-1130-445a-b42b-65961188fc22(com.mbeddr.ext.tasks.structure)" version="7" />
+    </dependencies>
+    <rename id="y2pp.3735709350941459881" type="CONCEPT" from="MbeddrTasksPlatform" to="MbeddrAVRTasksPlatform" />
+  </StructureModification>
 </history>
 

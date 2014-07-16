@@ -35,6 +35,8 @@
   <import index="tpcw" modelUID="r:00000000-0000-4000-0000-011c895902bc(jetbrains.mps.lang.sharedConcepts.structure)" version="0" implicit="yes" />
   <import index="tp2c" modelUID="r:00000000-0000-4000-0000-011c89590338(jetbrains.mps.baseLanguage.closures.structure)" version="3" implicit="yes" />
   <import index="e2lb" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" version="-1" implicit="yes" />
+  <import index="y2pp" modelUID="r:07a69fd3-1130-445a-b42b-65961188fc22(com.mbeddr.ext.tasks.structure)" version="8" implicit="yes" />
+  <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" implicit="yes" />
   <root type="tpf8.MappingConfiguration" typeId="tpf8.1095416546421" id="1887758849510511814" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="AddTimeProviderAtmega" />
     <property name="topPriorityGroup" nameId="tpf8.1184950341882" value="true" />
@@ -925,6 +927,15 @@
           </node>
         </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.Statement" typeId="c4fa.4185783222026464515" id="4418448293022049638" nodeInfo="ng" />
+        <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.CommentStatement" typeId="c4fa.1679452829930336984" id="2714039539634390464" nodeInfo="ng">
+          <node role="textblock" roleId="c4fa.8624890525768479139" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="2714039539634390466" nodeInfo="ng">
+            <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="2714039539634390467" nodeInfo="ng">
+              <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2714039539634390468" nodeInfo="ng">
+                <property name="escapedValue" nameId="87nw.2557074442922438158" value="The distaanze between two overflows is too long. So the loop can only repeat two times max." />
+              </node>
+            </node>
+          </node>
+        </node>
         <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.DoWhileStatement" typeId="c4fa.8441331188640899788" id="4418448293020464361" nodeInfo="ng">
           <node role="body" roleId="c4fa.8441331188640899790" type="c4fa.StatementList" typeId="c4fa.4185783222026475861" id="4418448293020464362" nodeInfo="ng">
             <node role="statements" roleId="c4fa.4185783222026475862" type="c4fa.ExpressionStatement" typeId="c4fa.7254843406768833938" id="4418448293020473680" nodeInfo="ng">
@@ -997,6 +1008,11 @@
             </node>
             <node role="left" roleId="mj1l.8860443239512128064" type="c4fa.LocalVarRef" typeId="c4fa.2093108837558113914" id="4418448293020465132" nodeInfo="ng">
               <link role="var" roleId="c4fa.2093108837558124071" targetNodeId="4418448293020463229" resolveInfo="currentHighTicks" />
+            </node>
+          </node>
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="y2pp.LoopExecutionTimeAssertionAnnotation" typeId="y2pp.9022744129984649407" id="2714039539634390420" nodeInfo="ng">
+            <node role="loopAssertion" roleId="y2pp.9022744129987688541" type="y2pp.RepeatingTimesLoopAssertion" typeId="y2pp.9022744129984705485" id="2714039539634390422" nodeInfo="ng">
+              <property name="repeatingTimes" nameId="y2pp.9022744129987688558" value="2" />
             </node>
           </node>
         </node>
@@ -1079,7 +1095,7 @@
           <node role="expr" roleId="c4fa.7254843406768833939" type="mj1l.AssignmentExpr" typeId="mj1l.22102029902365709" id="4418448293019379269" nodeInfo="ng">
             <node role="right" roleId="mj1l.8860443239512128065" type="mj1l.HexNumberLiteral" typeId="mj1l.1054289341113450444" id="4418448293019379276" nodeInfo="ng">
               <property name="unsigned" nameId="mj1l.5192961572790190887" value="false" />
-              <property name="value" nameId="mj1l.2212975673976043696" value="01" />
+              <property name="value" nameId="mj1l.2212975673976043696" value="05" />
             </node>
             <node role="left" roleId="mj1l.8860443239512128064" type="x27k.GlobalConstantRef" typeId="x27k.3788988821852026523" id="4418448293019379131" nodeInfo="ng">
               <link role="constant" roleId="x27k.3376775282622611130" targetNodeId="6312011405423432611" resolveInfo="TCCR1B" />

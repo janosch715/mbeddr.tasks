@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:07a69fd3-1130-445a-b42b-65961188fc22(com.mbeddr.ext.tasks.structure)" version="7">
+<model modelUID="r:07a69fd3-1130-445a-b42b-65961188fc22(com.mbeddr.ext.tasks.structure)" version="8">
   <persistence version="8" />
   <language namespace="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
@@ -9,7 +9,7 @@
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="25" />
   <import index="gjff" modelUID="r:d67806e2-357e-4785-b706-1dba5aa9c486(com.mbeddr.ext.tasks.rt.profiling)" version="-1" />
   <import index="clbe" modelUID="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" version="11" />
-  <import index="y2pp" modelUID="r:07a69fd3-1130-445a-b42b-65961188fc22(com.mbeddr.ext.tasks.structure)" version="7" implicit="yes" />
+  <import index="y2pp" modelUID="r:07a69fd3-1130-445a-b42b-65961188fc22(com.mbeddr.ext.tasks.structure)" version="8" implicit="yes" />
   <import index="tpce" modelUID="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" version="0" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="9022744129987875051" nodeInfo="ig">
@@ -527,8 +527,8 @@
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3735709350941459881" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="mbeddrTasks" />
-    <property name="name" nameId="tpck.1169194664001" value="MbeddrTasksPlatform" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="mbeddr tasks platform" />
+    <property name="name" nameId="tpck.1169194664001" value="MbeddrAVRTasksPlatform" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="mbeddr avr tasks platform" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3735709350941459882" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3735709350941459660" resolveInfo="ITasksPlatform" />
