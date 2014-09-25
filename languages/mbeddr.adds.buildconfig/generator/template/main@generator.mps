@@ -162,7 +162,7 @@
                       <node role="expression" roleId="tpee.1068580123156" type="tpee.PlusAssignmentExpression" typeId="tpee.1215695189714" id="7817006255800676187" nodeInfo="nn">
                         <node role="rValue" roleId="tpee.1068498886297" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="7817006255800685994" nodeInfo="nn">
                           <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="7817006255800685999" nodeInfo="nn">
-                            <property name="value" nameId="tpee.1070475926801" value=".d90 " />
+                            <property name="value" nameId="tpee.1070475926801" value=".tmp " />
                           </node>
                           <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="7817006255800678133" nodeInfo="nn">
                             <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="7817006255800676188" nodeInfo="nn">
@@ -657,7 +657,7 @@
           </node>
           <node role="commands" roleId="i2y7.5950410542643587172" type="i2y7.Command" typeId="i2y7.5950410542643587169" id="7817006255800455090" nodeInfo="ng">
             <node role="items" roleId="i2y7.3373914745211590943" type="i2y7.TextCommandItem" typeId="i2y7.3373914745211590947" id="7817006255800455091" nodeInfo="ng">
-              <property name="text" nameId="i2y7.3373914745211590948" value="$(LD) $^ -o $@ $(LDFLAGS)" />
+              <property name="text" nameId="i2y7.3373914745211590948" value="$(LD) $^ -o $@.tmp $(LDFLAGS)" />
             </node>
           </node>
           <node role="commands" roleId="i2y7.5950410542643587172" type="i2y7.Command" typeId="i2y7.5950410542643587169" id="7817006255800455092" nodeInfo="ng">
@@ -665,7 +665,7 @@
               <property name="text" nameId="i2y7.3373914745211590948" value="cp -u" />
             </node>
             <node role="items" roleId="i2y7.3373914745211590943" type="i2y7.TextCommandItem" typeId="i2y7.3373914745211590947" id="7817006255800455140" nodeInfo="ng">
-              <property name="text" nameId="i2y7.3373914745211590948" value="Binary.d90" />
+              <property name="text" nameId="i2y7.3373914745211590948" value="Binary.tmp" />
               <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.PropertyMacro" typeId="tpf8.1087833241328" id="7817006255800455151" nodeInfo="nn">
                 <property name="propertyName" nameId="tpck.1757699476691236117" value="text" />
                 <node role="propertyValueFunction" roleId="tpf8.1167756362303" type="tpf8.PropertyMacro_GetPropertyValue" typeId="tpf8.1167756080639" id="7817006255800455152" nodeInfo="nn">
@@ -673,7 +673,7 @@
                     <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="7817006255800455162" nodeInfo="nn">
                       <node role="expression" roleId="tpee.1068580123156" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="7817006255800501561" nodeInfo="nn">
                         <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="7817006255800501566" nodeInfo="nn">
-                          <property name="value" nameId="tpee.1070475926801" value=".d90" />
+                          <property name="value" nameId="tpee.1070475926801" value=".tmp" />
                         </node>
                         <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="7817006255800456354" nodeInfo="nn">
                           <node role="operand" roleId="tpee.1197027771414" type="tpf8.TemplateFunctionParameter_sourceNode" typeId="tpf8.1167169188348" id="7817006255800455161" nodeInfo="nn" />
